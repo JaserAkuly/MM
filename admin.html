@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makkah Masjid</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!-- font awesome for icons -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- animated css  -->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="screen">
+
+    <!--owl carousel css-->
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css" media="screen">
+
+
+    <!-- Parse Keys -->
+    <script src="//www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
+
+    <script type="text/javascript">
+        Parse.initialize("6ikPtkyr7abwzGSz47pVVxLBVRY8eUxwvbylXcU6", "bRcdhUphUlaaxilOwFjRY7JcBLGzCL56jIE3YjUu");
+
+        var Annoucements = Parse.Object.extend("Annoucements");
+        var annoucements = new Annoucements();
+        annoucements.save({content: "annoucement1"}, {
+            success: function(object) {
+                $(".success").show();
+            },
+            error: function(model, error) {
+                $(".error").show();
+            }
+        });
+    </script>
+
+
+
+</head>
+<body data-spy="scroll" data-offset="80">
+
+
+<!--Start of NavBar -->
+<div class="navbar navbar-default navbar-fixed-top trans-before" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Makkah Masjid <span></span> </a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#annoucements">Annoucements</a></li>
+                <li><a href="#prayerTime">Prayer Time</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End of NavBar -->
+
+<!-- Hero Slider -->
+<div id="main-slider" class="one-page-static-wrap parallax" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-slider">
+                    <div class="slides">
+                        <h2>Admin Panel </h2>
+                        <p style="color:#ffffff;">Please Adjust Content Below To Reflect Live Website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Hero Slider-->
+
+<div class="container">
+    <div class="row">
+        <div class="purchase-section">
+            <div class="col-lg-12">
+                <h3 style="text-align: center; margin-top: 12px; margin-bottom: 5px;">Annoucements</h3>
+            </div>
+            <div class="col-lg-12">
+                <ul>
+                    <li id="annoucement1">Etiam imperdiet volutpat libero eu tristique.</li>
+                    <li id="annoucement2">Curabitur porttitor ante eget hendrerit adipiscing.</li>
+                    <li id="annoucement3">Praesent ornare nisl lorem, ut condimentum lectus gravida ut.</li>
+                    <li id="annoucement4">Nunc ultrices tortor eu massa placerat posuere.</li>
+                    <li id="annoucement5">Nunc ultrices tortor eu massa placerat posuere.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--purchase section-->
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 margin30">
+                <div class="footer-col">
+                    <h3 class="heading">About us</h3>
+
+                    <p>
+                        Garland Makkah Masjid is a non-profit Islamic organization located in Garland, TX. It is a
+                        Mosque and Community Center serving the Muslims of Garland, Richardson and entire DFW area
+                    </p>
+                    <ul class="address-info list-unstyled">
+                        <li><i class="fa fa-home"></i>3301 W. Buckingham Rd. Garland, TX 75042</li>
+                        <li><i class="fa fa-phone"></i>972.675.4000</li>
+                        <li><i class="fa fa-envelope"></i> <a href="#">contact@makkahmasjid.net</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 margin30">
+                <div class="footer-col">
+                    <h3 class="heading">Ask Imam a Question</h3>
+
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="q_name">Name</label>
+                            <input type="text" class="form-control" id="q_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="q_mail">Email</label>
+                            <input type="email" class="form-control" id="q_mail" required="">
+                        </div>
+                        <div class="form-group">
+                            <label for="q_message">Your Question</label>
+                            <textarea class="form-control" rows="6" id="q_message" required=""></textarea>
+                        </div>
+                        <button type="submit" value="Send Message" id="q_submit" class="btn btn-theme-bg">Send
+                            Question
+                        </button>
+
+                    </form>
+                    <!--form-->
+                </div>
+
+            </div>
+            <!--footer col-->
+            <div class="col-md-3 margin30">
+                <div class="footer-col">
+                    <h3 class="heading">Social</h3>
+                    <ul class="list-inline social-1">
+                        <li><a href="https://www.facebook.com/pages/Makkah-Masjid-Garland-TX/285752768111928"><i
+                                class="fa fa-facebook" data-toggle="tooltip" title="" data-original-title="Facebook"
+                                data-placement="top"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter" data-toggle="tooltip" title=""
+                                          data-original-title="Twitter" data-placement="top"></i></a></li>
+                        <li><a href=""><i class="fa fa-google-plus" data-toggle="tooltip" title=""
+                                          data-original-title="Google pluse" data-placement="top"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--footer col-->
+            <div class="col-md-3 margin30">
+                <div class="footer-col">
+                    <h3 class="heading">Newsletter</h3>
+
+                    <p>
+                        Join our monthly membership newsletter!.
+                    </p>
+
+                    <p>
+                        <button data-toggle="modal" data-target="#newsletter_modal" class="btn btn-theme-bg">Subscribe
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-btm">
+                    <span>Copyright 2014 &copy; Makkah Masjid</span>
+                </div>
+            </div>
+        </div>
+        <!--footer btm-->
+    </div>
+</footer>
+<!--footer end-->
+
+<!-- Prayer Time Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">Prayer Timings</h4>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Volunteer Modal -->
+<div class="modal fade" id="volunteer_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">Volunteer Modal</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="volunteerForm">
+                    <div class="notice-volunteer clearfix"></div>
+                    <div class="form-group">
+                        <label for="v_name">Name</label>
+                        <input type="text" class="form-control" id="v_name" name="v_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="v_email">Email</label>
+                        <input type="email" class="form-control" id="v_email" name="v_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="v_message">Message</label>
+                        <textarea class="form-control" rows="6" id="v_message" name="v_message" required></textarea>
+                    </div>
+                    <input type="button" value="Send Message" id="v_submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Event Modal -->
+<div class="modal fade" id="event_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">Event Reservation</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="eventForm">
+                    <div class="notice-event clearfix"></div>
+                    <div class="form-group">
+                        <label for="e_name">Name</label>
+                        <input type="text" class="form-control" id="e_name" name="e_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="e_email">Email</label>
+                        <input type="email" class="form-control" id="e_email" name="e_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e_phone">Phone</label>
+                        <input type="tel" class="form-control" id="e_phone" name="e_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e_eventname">Event Name</label>
+                        <input type="text" class="form-control" id="e_eventname" name="e_eventname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e_date">Event Date</label>
+                        <input type="datetime" class="form-control" id="e_date" name="e_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e_time">Event Time</label>
+                        <input type="time" class="form-control" id="e_time" name="e_time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="e_description">Event Description</label> (Provide more details about the event, such
+                        as how many people, whether food will be served, etc.)
+                        <textarea class="form-control" rows="6" id="e_description" name="e_description"
+                                  required></textarea>
+                    </div>
+                    <input type="button" value="Send Message" id="e_submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Membership Modal -->
+<div class="modal fade" id="membership_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">Makkah Masjid Youth Committee</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="membershipForm">
+                    <div class="notice-membership clearfix"></div>
+                    <div class="form-group">
+                        <label for="m_name">Name</label>
+                        <input type="text" class="form-control" id="m_name" name="m_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="m_email">Email</label>
+                        <input type="email" class="form-control" id="m_email" name="m_email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="m_phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="m_phone" name="m_phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="m_age">Age</label>
+                        <input type="number" class="form-control" id="m_age" name="m_age" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="m_shirt">Shirt Size</label> (Children Sizes)
+                        <select class="form-control" id="m_shirt" name="m_shirt" required>
+                            <option value="1">XS</option>
+                            <option value="2">S</option>
+                            <option value="3">M</option>
+                            <option value="4">L</option>
+                            <option value="5">XL</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="m_message">Message</label>
+                        <textarea class="form-control" rows="6" id="m_message" name="m_message" required></textarea>
+                    </div>
+                    <input type="button" value="Send Message" id="m_submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Announcement Modal -->
+<div class="modal fade" id="annoucement_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">Announcement</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="announcementForm">
+                    <div class="notice-announcement clearfix"></div>
+                    <div class="form-group">
+                        <label for="a_name">Name</label>
+                        <input type="text" class="form-control" id="a_name" name="a_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="a_email">Email</label>
+                        <input type="email" class="form-control" id="a_email" name="a_email">
+                    </div>
+                    <div class="form-group">
+                        <label for="a_number">Phone Number</label>
+                        <input type="tel" class="form-control bfh-phone" value="" data-format="+1 (ddd) ddd-dddd"
+                               id="a_number" name="a_number">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="a_date">Date you'd like for it to be annouced</label>
+                        <input type="date" class="form-control" id="a_date" name="a_date">
+                    </div>
+
+                    <div class="container">
+                        <div class="col-sm-6" style="height:75px;">
+                            <div class='col-md-5'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker9'>
+                                        <input type='text' class="form-control"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-md-5'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker10'>
+                                        <input type='text' class="form-control"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker9').datetimepicker();
+                                $('#datetimepicker10').datetimepicker();
+                                $("#datetimepicker9").on("dp.change", function (e) {
+                                    $('#datetimepicker10').data("DateTimePicker").setMinDate(e.date);
+                                });
+                                $("#datetimepicker10").on("dp.change", function (e) {
+                                    $('#datetimepicker9').data("DateTimePicker").setMaxDate(e.date);
+                                });
+                            });
+                        </script>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="a_message">Message</label>
+                        <textarea class="form-control" rows="6" id="a_message" name="a_message"></textarea>
+                    </div>
+                    <input type="button" value="Send Message" id="a_submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Newsletter Modal -->
+<div class="modal fade" id="newsletter_modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
+                        class="sr-only">Close</span></button>
+                <h4 class="modal-title">Newsletter</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="newsletterForm">
+                    <div class="notice-newsletter clearfix"></div>
+                    <div class="form-group">
+                        <label for="n_name">Name</label>
+                        <input type="text" class="form-control" id="n_name" name="n_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="n_phone">Phone</label>
+                        <input type="text" class="form-control" id="n_phone" name="n_phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="n_email">Email</label>
+                        <input type="email" class="form-control" id="n_email" name="n_email">
+                    </div>
+                    <input type="button" value="Subscribe" id="n_submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--scripts and plugins -->
+
+<!-- News jQuery Scroll -->
+
+<!--must need plugin jquery-->
+<script src="js/jquery.min.js"></script>
+
+<!--bootstrap js plugin-->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+<!--easing plugin for smooth scroll-->
+<script src="js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+
+<!--easing plugin for nice scroll scroll-->
+<script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
+
+<!--parallax background plugin-->
+<script src="js/jquery.stellar.min.js" type="text/javascript"></script>
+
+<!--digit countdown plugin-->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+<!--digit countdown plugin-->
+<script src="js/jquery.counterup.min.js" type="text/javascript"></script>
+
+<!--on scroll animation-->
+<script src="js/wow.min.js" type="text/javascript"></script>
+
+<!--owl carousel slider-->
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+
+<!--customizable plugin edit according to your needs-->
+<script src="js/custom.js" type="text/javascript"></script>
+
+
+<!--Google Maps JS-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+    var myLatlng;
+    var map;
+    var marker;
+
+    function initialize() {
+        myLatlng = new google.maps.LatLng(32.931591, -96.679405);
+
+        var mapOptions = {
+            zoom: 13,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            draggable: false
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+        var contentString = '<p style="line-height: 20px;"><strong>Makkah Masjid</strong></p><p>3301 W. Buckingham Rd. Garland, TX 75042</p>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Marker'
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+</body>
+</html>
